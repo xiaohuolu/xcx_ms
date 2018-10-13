@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/orderDetails/cancel/cancel",
+    "pages/message/message",
+    "pages/mine/toEvaluate/toEvaluate",
+    "pages/message/messageDetail/messageDetail",
+    "pages/mine/myEvaluate/myEvaluate",
+    "pages/detail/detail",
+    "pages/detail/roomImage/roomImage",
+    "pages/detail/evaluation/evaluation",
+    "pages/date/date",
+    "pages/mine/mine",
+    "pages/orderDetails/orderDetails",
+    "pages/mine/myOrders/myOrders",
+    "pages/detail/roomApplication/roomApplication",
+    "pages/detail/facilities/facilities",
+    "pages/detail/premium/premium",
+    "template/navigator/navigator",
+    "template/articles/articles"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "光哥海南度假民宿",
+    "navigationBarTextStyle": "black"
+  } 
+}

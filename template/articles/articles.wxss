@@ -1,0 +1,12 @@
+/* template/articles/articles.wxss */
+.container{
+  padding:30rpx 20rpx;
+  font-size:30rpx;
+  color:#333;
+  line-height: 2;
+  text-indent: 2rem;
+  background:#fff;
+}
+.container image{
+  max-width:100%;
+}

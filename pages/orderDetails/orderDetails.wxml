@@ -1,0 +1,90 @@
+<view class="container">
+  <!-- <view> -->
+    <view class="header-section">
+      <text>订单号:{{rooms.order_sn}}</text>
+      <text class="font-red">{{order_status_text}}</text>
+    </view>
+
+    <!-- <view class="cancel">
+
+     
+    </view> -->
+  <!-- </view> -->
+  <view class="list-section">
+    <view class="list-item">
+      <view class="item-img">
+        <image src="{{apiHost}}{{rooms.goods_image}}" wx:if="{{rooms.goods_image}}"></image>
+      </view>
+      <view class="item-describe">
+        <view class="describe">
+          <text class="title ellipsis">{{rooms.goods_name}}</text>
+          <!-- <text class="font-gray font28 msg ellipsis">{{rooms.goods_content}}</text> -->
+          <text class="font-blue font28">{{order_status}}</text>
+          <text class="font-red">￥{{rooms.goods_price}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="time-section">
+      <view class="time">
+        <text>入住时间:{{rooms.start_time}}</text>
+        <text>退房时间:{{rooms.over_time}}</text>
+      </view>
+      <view>共{{rooms.stay_days}}晚</view>
+    </view>
+  </view>
+
+  <view class="group-section pd-lr20">
+    <view class="group-name border-b">
+      <text>入住人:</text>{{rooms.consignee}}</view>
+    <view class="group-phone border-b">
+      <text>联系电话:</text>{{rooms.mobile}}</view>
+    <view class="group-wx border-b">
+      <text>身份证号:</text>{{rooms.idcard}}</view>
+  </view>
+
+  <view class="group-section  pd-lr20">
+    <view class="total-price border-b">
+      <text>总价</text>
+      <!-- <text class="font-red">￥{{rooms.total_amount}}</text> -->
+    </view>
+    <view class="price border-b">
+      <text>{{rooms.goods_price}}*{{rooms.stay_days}}晚</text>
+      <text class="font-red">￥{{rooms.total_amount}}</text>
+    </view>
+    <view class="price border-b">
+      <text>线上押金</text>
+      <text class="font-red" bindtap='onlineDeposit'>查看 ></text>
+    </view>
+  </view>
+
+  <view class="group-section  pd-lr20">
+    <view class="price border-b">
+      <text>入住状态</text>
+      <text class="font-red">{{rooms.shipping_status_text}}</text>
+    </view>
+    <view class="price border-b">
+      <text>支付状态</text>
+      <text class="font-red">{{rooms.pay_status_text}}</text>
+    </view>
+  </view>
+
+
+  <view class="unsubscribe">
+    <text>退订政策</text>
+    <text class="font-red" bindtap='unsubscribePolicy'>查看 ></text>
+  </view>
+  <view class="unsubscribe">
+    <text>对订单有疑问?</text>
+    <text class="font-red" bindtap='customService'>联系客服 ></text>
+  </view>
+
+  <view class="orders-msg-section">
+
+    <text>下单时间:{{rooms.add_time_text}}</text>
+  </view>
+
+  <view class="btn-group">
+    <button hidden='{{payBtn}}' type="primary" size="mini" bindtap="payment">立即支付</button>
+    <button hidden='{{cancelBtn}}' type="warn" size="mini" bindtap="cancel">{{pay_status==0?'取消订单':'申请退款'}}</button>
+  </view>
+</view>

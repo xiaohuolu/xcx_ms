@@ -1,0 +1,98 @@
+<!--pages/detail/roomApplication/roomApplication.wxml-->
+
+<!-- <view class="mask" hidden="{{maskFlag}}">
+  <view class="application-modal">
+    <icon class="iconfont icon-close" bindtap='closeFlag'></icon>
+    <view class="application-content">
+      <icon type="success" size="80"></icon>
+      <text class="title">申请已提交等待房东确认</text>
+      <text class="small">由于时差原因，确认可能稍晚</text>
+    </view>
+    <button type="warn" bindtap="toOrderDetails">查看订单</button>
+  </view>
+</view> -->
+
+<view class="container">
+  <view class="list-section">
+    <view class="list-item">
+      <view class="item-img">
+        <image src="{{apiHost}}{{rooms.original_img}}"></image>
+      </view>
+
+      <view class="item-describe">
+        <view class="describe">
+          <text class="title font28 ellipsis">{{rooms.goods_name}}</text>
+          <text class="font-gray font24 ellipsis">{{rooms.goods_content}}</text>
+          <text class="font-red">￥{{rooms.shop_price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+  
+    <view class="title font28">选择日期</view>
+
+    <view bindtap="bindViewTap" class="date">
+      <!-- {{date}} 至 {{tomorrow}}   -->
+
+      <view class="room-msg">
+        <text>入住</text>
+        <view class="font-red"> {{checkInDate}}</view>
+      </view>
+
+      <!-- <text class="room-time">共 1 晚</text> -->
+
+      <view class="room-msg">
+        <text>离店</text>
+        <view class="font-red">{{checkOutDate}}</view>
+      </view>
+    </view>
+
+ <view style='height:40rpx;background:rgb(245,245,245)'></view>
+
+   <view class="title font28 price">
+      <text>总价</text>
+      <text class="font-red">￥{{totalPrice}}</text>
+    </view>
+
+    <view style='height:40rpx;background:rgb(245,245,245)'></view>
+
+    <form bindsubmit='sendOrder'>
+      <view class="user-section">
+        <!-- <view class="rooms-quantity border-b">
+        <text class="user-text">预定间数</text>
+        <view class="quantity-btn">
+          <button bindtap="reduce">-</button>
+          <text>{{count}}间</text>
+          <button bindtap="add">+</button>
+        </view>
+      </view> -->
+
+        <view class="user-name border-b">
+          <text class="user-text">入住人</text>
+          <input name="consignee" type='text' placeholder='请填写入住人姓名'></input>
+        </view>
+
+        <view class="phone border-b">
+          <text class="user-text">手机号</text>
+          <input name="mobile" type='text' placeholder='请填写入住人手机号'></input>
+        </view>
+
+        <view class="idCard border-b">
+          <text class="user-text">身份证</text>
+          <input name="idcard" type='text' placeholder='请填写入住人身份证号码'></input>
+        </view>
+      </view>
+
+      <view style='height:30rpx;background:rgb(245,245,245)'></view>
+
+      <textarea class="user-note" name="user_note" placeholder='留言不多于30个汉字'></textarea>
+
+      <button type="warn" class="commit" form-type='submit'>提交订单</button>
+
+    </form>
+    
+  </view>
+  <!-- <view style='height:100rpx'></view> -->
+</view>

@@ -1,0 +1,40 @@
+<!--pages/detail/evaluation/evaluation.wxml-->
+
+<view class="container">
+  <view class="room-evaluation-section">
+
+    <view class="room-evaluation-content border-b" wx:for="{{evaluation}}" wx:key="index">
+      <view class="evaluation-person">
+        <view class="person-img" wx:if="{{item.goods_image}}">
+          <image src="{{apiHost}}{{item.goods_image}}"></image>
+        </view>
+        <view class="person-msg">
+          <text class="person-msg-name">{{item.goods_name}}</text>
+          <!-- <view class="room-evaluation-title" wx:if="{{item.is_comment}}"> -->
+
+
+            <!-- <text class="title">综合评价</text> -->
+
+
+            <!-- <icon class="iconfont icon-favorfill" wx:for="{{level}}" wx:key="index"></icon> -->
+       
+            <!-- <text class="icon-length">{{level}}分</text> -->
+          <!-- </view> -->
+          <text class="person-msg-time">{{item.start_time}}——{{item.over_time}}</text>
+          <text class="font-red">￥{{item.total_amount}}</text>
+        </view>
+      </view>
+      <view class="room-evaluation-word font-red" wx:if="{{item.is_comment}}">
+      <text>此房间已评价</text>
+      <button type="warn" size="mini" data-index="{{index}}" bindtap="toDetailEvaluate">查看</button>
+      </view>
+      <view class="room-evaluation-word font-red" wx:else>
+       <text>待评价，点击按钮去评价</text> 
+       <button data-ordersn="{{item.order_sn}}" data-goodsid="{{item.goods_id}}" type="warn" size="mini" bindtap="toEvaluate">去评价</button>
+      </view>
+      
+    </view>
+
+  </view>
+
+</view>

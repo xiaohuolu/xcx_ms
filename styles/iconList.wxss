@@ -1,0 +1,23 @@
+.whole-lease-section .whole-lease {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.whole-lease-section .whole-lease view {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  text-align: center;
+  line-height: 1.5;
+  margin: 20rpx 0;
+    align-items: center;
+}
+
+/* .whole-lease-section .whole-lease view icon {
+  font-size: 40rpx;
+} */
+.whole-lease-section .whole-lease view image {
+   height:80rpx;
+   width:80rpx
+} 

@@ -1,0 +1,63 @@
+<!--index.wxml-->
+
+<import src="/template/navigator/navigator.wxml" />
+
+<view class="container">
+
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-section">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item  data-src="{{item.link}}{{item.image}}"  bindtap='previewImage'>
+        <image src="{{item.link}}{{item.image}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="address-section" bindtap="toMap">
+    <text class="address">{{common.address}}</text>
+    <icon class="iconfont icon-locationfill font-red"></icon>
+  </view>
+
+  <view bindtap="bindViewTap" class="date">
+    <!-- {{date}} 至 {{tomorrow}}   -->
+
+    <view class="room-msg">
+      <text class="font-gray">入住</text>
+      <view class="font-red">{{checkInDate}}</view>
+    </view>
+
+    <text class="room-time font-gray">共 {{day}} 晚</text>
+
+    <view class="room-msg">
+      <text class="font-gray">离店</text>
+      <view class="font-red"> {{checkOutDate}} </view>
+    </view>
+  </view>
+
+
+  <view class="list-section">
+
+    <view class="list-item border-b" wx:for="{{rooms}}" bindtap='toDetail' wx:key="index" data-room="{{item}}" wx:if="{{rooms.length>0}}">
+      <view class="item-img">
+        <image src="{{apiHost}}{{item.original_img}}" ></image>
+      </view>
+
+      <view class="item-describe">
+        <view class="describe">
+          <text class="title">{{item.goods_name}}</text>
+          <text class="font24 ellipsis font-gray">{{item.goods_content}}</text>
+          <text class="font-red font24">{{item.surplus==0?'房间已满':'剩余'+item.surplus+'间房'}}</text>
+        </view>
+
+        <view class="price font-red">
+          ￥{{item.shop_price}}
+        </view>
+
+      </view>
+    </view>
+
+  </view>
+
+  <template is="tabNav" data="{{active}}" />
+
+</view>
+
+ <view style='height:100rpx'></view>

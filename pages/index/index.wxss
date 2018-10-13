@@ -1,0 +1,14 @@
+
+.container .address-section{
+  background:#fff;
+  padding:30rpx;
+  line-height: 1.5;
+  font-size:32rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .address-section icon{
+  font-size:50rpx;
+}
+

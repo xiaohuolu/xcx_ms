@@ -1,0 +1,21 @@
+<!--pages/detail/premium/premium.wxml-->
+
+<view class="container">
+  <view class="room-details-section">
+    <view class="room-details">
+      <view class="details-item border-b">
+        <view>
+          <text>清洁费</text>
+        </view>
+        <text class="font-red">￥466</text>
+      </view>
+      <view class="details-item border-b">
+        <view class="item-text">
+          <text>额外人员费用</text>
+          <text class="font-gray font24">五位以上的房客人员，每超出1人每晚加收100</text>          
+        </view>
+        <text class="font-red">￥100/人</text>
+      </view>
+    </view>
+  </view>
+</view>

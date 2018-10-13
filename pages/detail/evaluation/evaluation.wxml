@@ -1,0 +1,47 @@
+<!--pages/detail/evaluation/evaluation.wxml-->
+
+<view class="container">
+  <view class="room-evaluation-section">
+
+    <!-- <view class="room-evaluation-title">
+      <text class="title">综合评价</text>
+      <icon class="iconfont icon-favorfill"></icon>
+      <icon class="iconfont icon-favorfill"></icon>
+      <icon class="iconfont icon-favorfill"></icon>
+      <icon class="iconfont icon-favorfill"></icon>
+      <icon class="iconfont icon-favorfill"></icon>
+      <text class="icon-length">{{average}}分</text>
+    </view> -->
+
+    <view class="room-evaluation-content border-b" wx:for="{{evaluation}}" wx:key="index">
+      <view class="evaluation-person">
+        <view class="person-img">
+          <image src="{{item.user_id.face}}"></image>
+        </view>
+        <view class="person-msg">
+          <text class="person-msg-name">{{item.user_id.nickname}}</text>
+          <view class="room-evaluation-title">
+            <!-- <text class="title">综合评价</text> -->
+            <icon class="iconfont icon-favorfill" wx:for="{{item.level}}" wx:key="index"></icon>
+
+            <text class="icon-length">{{item.level}}分</text>
+          </view>
+          <text class="person-msg-time">{{item.create_time}}</text>
+        </view>
+      </view>
+      <view class="room-evaluation-word">{{item.comment}}</view>
+
+      <!-- <view class="chooseImg-section">
+        <image src="/assets/swipe/index_ad_1.jpg" data-src="" bindtap='previewImage'></image>
+        <image src="/assets/swipe/index_ad_2.jpg" data-src="" bindtap='previewImage'></image>
+        <image src="/assets/swipe/index_ad_3.jpg" data-src="" bindtap='previewImage'></image>
+        <image src="/assets/swipe/index_ad_4.jpg" data-src="" bindtap='previewImage'></image>
+        <image src="/assets/swipe/index_ad_5.jpg" data-src="" bindtap='previewImage'></image>
+      </view> -->
+
+      <view class="shopkeeper" wx:if="{{item.reply_content}}">掌柜回复：{{item.reply_content}}</view>
+    </view>
+
+  </view>
+
+</view>

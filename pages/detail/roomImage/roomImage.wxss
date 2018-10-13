@@ -1,0 +1,49 @@
+.container{
+  min-height:100vh;
+  padding:0 40rpx;
+}
+.choose-section{
+  padding:40rpx 0 50rpx;
+  width:100%;
+  white-space: nowrap;
+}
+.choose-section text{
+  display: inline-block;
+  padding:15rpx 50rpx;
+  margin-right:20rpx;
+  background:#fff;
+  border-radius: 10rpx;
+  border:1rpx solid #ddd;
+}
+.choose-section .current{
+  background:rgb(253,129,55);
+  color:#fff;
+}
+.search-section .img-section{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.search-section .img-section>view{
+  position: relative;
+  margin:15rpx 0;
+}
+.search-section .img-section image{
+    width:320rpx;
+    height:320rpx;
+    display: block;
+}
+.search-section .img-section text{
+  position: absolute;
+  bottom:0;
+  z-index: 9999;
+  display: block;
+  background:rgba(0,0,0,0.4);
+  width:100%;
+  line-height: 60rpx;
+  padding-left:20rpx;
+  /* padding:10rpx 20rpx; */
+  box-sizing: border-box;
+  color:#fff;
+}

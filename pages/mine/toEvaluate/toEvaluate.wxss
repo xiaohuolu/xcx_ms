@@ -1,0 +1,30 @@
+/* pages/mine/toEvaluate/toEvaluate.wxss */
+
+.container{
+  background:#fff;
+}
+textarea{
+  width:100vw;
+  padding:40rpx;
+  box-sizing: border-box;
+}
+
+.room-evaluation-title{
+  text-align: center
+}
+.room-evaluation-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height:220rpx;
+  justify-content: space-around;
+  margin:100rpx 0;
+}
+.room-evaluation-section .title{
+   font-size:38rpx;
+}
+.room-evaluation-title icon{
+  font-size:60rpx;
+  margin:0 10rpx;
+}
+ 

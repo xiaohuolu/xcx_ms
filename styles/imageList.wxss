@@ -1,0 +1,23 @@
+.chooseImg-section{
+   display: flex;
+   flex-wrap: wrap;
+   margin:50rpx 0;
+   box-sizing: border-box;
+}
+ 
+.chooseImg-section image{
+  width:220rpx;
+  height:220rpx;
+  margin:15rpx;
+}
+.chooseImg-section icon.icon-add_light{
+  font-size:100rpx;
+  background:#eee;
+  /* padding:60rpx; */
+  color:#999;
+  width:220rpx;
+  height:220rpx;
+  text-align: center;
+  line-height: 220rpx;
+  transform: translate(15rpx,15rpx)
+}

@@ -1,0 +1,26 @@
+<view class="container">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="对这间房说点什么吧.." name="textarea" />
+
+   <view style='height:20rpx;background:#eee'></view>
+
+     <!-- <view class="chooseImg-section">
+        <image wx:for="{{images}}" wx:key="index" src="{{item}}" data-src="{{item}}" bindtap='previewImage'></image>
+        <icon class="iconfont icon-add_light " bindtap='chooseImg'></icon>
+     </view> -->
+  
+     <view style='height:20rpx;background:#eee'></view>
+
+    <view class="room-evaluation-section">
+        <text class="title">给个好评吧</text>    
+      <view class="room-evaluation-title">
+        <icon class="iconfont {{choose_ids<=index?'icon-favor':'icon-favorfill'}} " wx:for="{{stars}}" wx:key="index" bindtap="chooseStart" data-ids="{{index}}"></icon>
+      
+         <text class="icon-length">{{choose_ids}}分</text>        
+      </view>
+    </view>
+
+    <button form-type="submit" type="primary"> 发表 </button>
+  </form>
+
+</view>

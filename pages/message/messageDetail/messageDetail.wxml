@@ -1,0 +1,17 @@
+<!--pages/message/messageDetail/messageDetail.wxml-->
+
+<view class="container">
+
+  <view class="chat-section" wx:if="{{isChat}}">哈哈</view>
+  <text class="no-msg" wx:else>没有更多消息</text>
+
+
+  <form bindsubmit='bindFormSubmit'>
+    <view class="send-section">
+      <input type="text" placeholder='输入新消息..' name="userMsg"></input>
+
+      <button formType="submit" type='warn'>发送</button>
+    </view>
+  </form>
+
+</view>

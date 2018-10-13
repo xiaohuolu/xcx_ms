@@ -1,0 +1,33 @@
+<!--pages/orderDetails/cancel/cancel.wxml-->
+<view class="container">
+      <image src="{{apiHost}}{{room.goods_image}}"></image>
+  <view class="room-section">
+    <view>
+      <text class="title"> 订单编号:</text>
+      <text>{{room.goods_sn}}</text>
+    </view>
+    <view>
+      <text class="title"> 房  间  名:</text>
+      <text>{{room.goods_name}}</text>
+    </view>
+    <view>
+      <text class="title"> 入住日期:</text>
+      <text>{{room.start_time}}</text>
+    </view>
+    <view>
+      <text class="title"> 离店日期:</text>
+      <text>{{room.over_time}}</text>
+    </view>
+    <view>
+      <text class="title"> 付款金额:</text>
+      <text class="font-red">￥{{room.total_amount}}</text>
+    </view>
+  </view>
+  <view class="btn-section">
+    <text class="title">请联系客服申请退款</text>
+    <view>
+      <button type="primary" open-type='contact'>客服微信</button>
+      <button type="warn" bindtap='customService'>客服电话</button>
+    </view>
+  </view>
+</view>

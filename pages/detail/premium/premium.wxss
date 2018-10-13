@@ -1,0 +1,18 @@
+/* pages/detail/premium/premium.wxss */
+
+.container{
+  background:#fff;
+  padding:0 20rpx;
+}
+.room-details-section{
+  margin-top:0;
+}
+.room-details-section .room-details .details-item{
+   padding:20rpx 0;
+}
+.room-details .details-item .item-text{
+  display: flex;
+  line-height: 2;
+  flex-direction: column;
+}
+ 

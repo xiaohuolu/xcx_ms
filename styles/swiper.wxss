@@ -1,0 +1,6 @@
+.swiper-section{
+  height:400rpx;
+}
+.swiper-section image.slide-image{
+   width:100%;
+}

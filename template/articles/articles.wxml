@@ -1,0 +1,4 @@
+ <!--template/articles/articles.wxml-->
+<view class="container">
+  {{content}}
+</view>

@@ -1,0 +1,19 @@
+<!--pages/message/message.wxml-->
+<view class="container">
+  <view class="room-evaluation-section">
+    <view class="room-evaluation-content border-b" wx:for="{{evaluation}}" wx:key="index">
+      <view class="evaluation-person" bindtap='toMessageDetail' data-name="{{item.name}}">
+        <view class="person-img">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="person-msg">
+          <text class="person-msg-name">{{item.name}}</text>
+          <text class="person-msg-time">{{item.time}}</text>
+        </view>
+        <text class="font-gray font24">2018-07-05</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

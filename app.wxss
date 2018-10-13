@@ -1,0 +1,135 @@
+/**app.wxss**/
+@import "/font/iconfont.wxss";
+@import "/styles/date.wxss";
+@import "/styles/swiper.wxss";
+@import "/styles/roomList.wxss";
+@import "/styles/evaluation.wxss";
+@import "/styles/iconList.wxss";
+@import "/styles/articles.wxss";
+@import "/styles/imageList.wxss";
+
+ .container{
+   background:rgb(245,245,245);
+   font-family: "Microsoft YaHei";
+   font-size:32rpx;
+ }
+ .font-red{
+     color:rgb(243,81,79);
+ }
+  .font-blue{
+     color:rgb(10, 130, 241);
+ }
+ .font-gray{
+   color:#999;
+ }
+ .font24{
+   font-size:24rpx;
+ }
+ .font28{
+   font-size:28rpx;
+ }
+ .pd-lr20{
+  padding:0 20rpx;
+}
+ .mg-lr20{
+  margin:0 20rpx;
+}
+.mr-40{
+  margin-right:40rpx;
+}
+ .bold{
+   font-weight: bold;
+ }
+ .ellipsis{
+    white-space: nowrap;
+   overflow: hidden;
+    text-overflow:ellipsis;
+ }
+ .border-b{
+   border-bottom:1rpx solid rgb(230,230,230);
+ }
+/* 卡片弹窗 */
+.mask{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background-color:rgba(0,0,0,0.5);
+  z-index:9999;
+}
+.mask .application-modal{
+  background:#fff;
+  width:100%;
+  height:50vh;
+  position: relative;
+  transform: translateY(50vh);
+}
+.mask .application-modal .icon-close{
+  position: absolute;
+  font-weight: bold;
+  font-size:40rpx;
+  z-index: 9999;
+  right:20rpx;
+}
+.mask .application-modal .application-content{
+   padding:50rpx 0;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   line-height: 2.5;
+   position: relative;  
+}
+ 
+.mask .application-modal .application-content .title{
+  font-size:40rpx;
+}
+.mask .application-modal .application-content .small{
+  font-size:32rpx;
+  color:#999;
+}
+.mask .application-modal .application-content button{
+   width:auto;
+   position:static;
+   transform: translateY(50rpx);
+}
+.mask .application-modal button{
+  position: absolute;
+  bottom:0;
+  border-radius: 0;
+  width:100%;
+}
+ /* 导航 */
+.tabbar-section{
+  display: flex;
+  justify-content: space-around;
+  background:#fff;
+  color:#999;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  border-top:1px solid rgb(245,245,245);
+}
+.tabbar-section .tabbar-item{
+   display: flex;
+   flex-direction: column;
+   /* align-self: center; */
+}
+.tabbar-section .tabbar-item text{
+  font-size:28rpx;
+}
+.tabbar-section icon{
+   font-size: 50rpx;
+}
+.tabbar-section .active{
+    color: mediumseagreen;
+}
+.tabbar-section button{
+  background:#fff;
+  font-size:28rpx;
+  padding:0;
+  color:#999;
+  line-height: 1.2;
+}
+.tabbar-section button::after {
+  border: 0;
+}

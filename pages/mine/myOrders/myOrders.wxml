@@ -1,0 +1,26 @@
+<!--pages/mine/myOrders/myOrders.wxml-->
+ 
+<view class="container">
+  <view class="orders-list-section">
+   
+    <view class="orders-list" data-ordersn="{{item.order_sn}}" bindtap='toOrderDetails' wx:for="{{orders}}" wx:key="index">
+      <view class="list-title border-b">{{item.goods_name}}</view>
+      <view class="list-content border-b">
+        <view class="content-text">
+          <view>{{item.start_time}}——{{item.over_time}} </view>
+         
+          <view>  <text class="font-red mr-40">共{{item.stay_days}}晚</text>总价: <text class="font-red">￥{{item.total_amount}}</text> </view>
+        </view>
+        <view class="content-img">
+          <image src="{{apiHost}}{{item.goods_image}}"></image>
+        </view>
+      </view>
+      <view class="status-section">
+      <view class="list-cancel font-red">{{item.order_status_text}}</view>
+      <view class="list-cancel font-red">{{item.shipping_status_text}}</view>
+      <view class="list-cancel font-red">{{item.pay_status_text}}</view>
+      </view>
+    </view>
+  
+  </view>
+</view>

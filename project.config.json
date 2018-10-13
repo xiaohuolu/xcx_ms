@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.1",
+	"appid": "wx0fcf2e225bbec60c",
+	"projectname": "Homestay1",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/orderDetails/orderDetails",
+					"query": "order_sn=201808011256097359"
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/mine/myOrders/myOrders",
+					"query": "wx_openid=o9Ozh5B9RPJdkKs_ZQv9SxC3_WHk"
+				},
+				{
+					"id": -1,
+					"name": "我的评价",
+					"pathName": "pages/mine/myEvaluate/myEvaluate",
+					"query": "wx_openid=o9Ozh5B9RPJdkKs_ZQv9SxC3_WHk"
+				},
+				{
+					"id": -1,
+					"name": "退款",
+					"pathName": "pages/orderDetails/cancel/cancel",
+					"query": "order_sn=MS0001&goods_name=豪华大床房&total_amount=598"
+				}
+			]
+		}
+	}
+}

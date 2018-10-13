@@ -1,0 +1,27 @@
+.date{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100vw;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  background:#fff;
+  margin-top:20rpx;
+   line-height: 1.8;
+   position: relative;
+}
+ .date .room-msg{
+   width:50vw;
+  text-align: center;
+   padding:20rpx 0;
+ }
+ .date .room-time{
+   position: absolute;
+   left:50%;
+   transform: translateX(-50%);
+   font-size:26rpx;
+   border: 1px solid rgb(242,242,242);
+   padding:7rpx 20rpx;
+   border-radius: 50rpx;
+   background:#fff;
+ }

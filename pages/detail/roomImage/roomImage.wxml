@@ -1,0 +1,20 @@
+<!--pages/detail/roomImage/roomImage.wxml-->
+<view class="container font28">
+
+  <!-- <scroll-view scroll-x="true" class="choose-section">
+    <text class="{{index==current?'current':''}}" data-num="{{index}}" data-name="{{item.name}}" data-id="{{item.id}}" wx:for="{{labels}}" wx:key="index" bindtap="chooseItem">{{item.name}}</text>
+  </scroll-view> -->
+
+  <view class="search-section">
+  
+    <view class="img-section">
+      <view wx:for="{{imgUrls}}" wx:key="index">
+        <image src="{{apiHost}}{{item.image_url}}" data-src="{{apiHost}}{{item.image_url}}" bindtap="previewImage"></image>
+        <text wx:for="{{labels}}" wx:key="index" wx:for-item="labels">{{item.label==labels.id?labels.name:''}}</text>
+      </view>
+ 
+    </view>
+   
+  </view>
+
+</view>

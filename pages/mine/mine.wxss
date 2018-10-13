@@ -1,0 +1,49 @@
+/* pages/mine/mine.wxss */
+.container{
+  background:#fff;
+}
+.authorization-section {
+   height:80vh;
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.wx-person-section{
+  background:#ff5050;
+  width:100%;
+  height:40vh;
+}
+.wx-person-section .wx-person{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20%);
+  line-height: 3;
+}
+.wx-person-section .person-head {
+  width:150rpx;
+  height:150rpx;
+}
+.wx-person-section open-data.headimg{
+  width:150rpx;
+  height:150rpx;
+  display: block;
+border-radius: 50%;
+overflow: hidden;
+ border:10rpx solid rgb(249,168,147);
+}
+.wx-person-section open-data.userNickName{
+  color:#fff;
+  font-size:36rpx;
+  width:80vw;
+  text-align: center;
+}
+.my-items{
+  background:#fff;
+}
+.my-item{
+  padding:30rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}

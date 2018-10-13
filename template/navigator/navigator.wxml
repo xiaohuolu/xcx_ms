@@ -1,0 +1,25 @@
+<template name="tabNav">
+  <view class="tabbar-section">
+    <view class="tabbar-item" data-num="0" bindtap='tabNav'>
+      <icon class="iconfont {{active==0?'icon-home_fill_light active':'icon-home_light'}}"></icon>
+      <!-- <icon class="iconfont icon-home_fill_light"></icon> -->
+      <text class="{{active==0?'active':''}}">首页</text>
+    </view>
+
+    <view class="tabbar-item">
+   
+      <!-- <icon class="iconfont icon-markfill"></icon> -->
+              
+      <button open-type='contact' class="iconfont icon-mark" style='font-size:50rpx'>
+      <!-- <icon class="iconfont {{active==1?'icon-markfill active':'icon-mark'}}" style='height:10rpx'></icon>   -->
+       <view class="font28">消息</view>  
+      </button>
+    </view>
+
+    <view class="tabbar-item" data-num="2" bindtap='tabNav'>
+      <icon class="iconfont {{active==2?'icon-myfill active':'icon-my_light'}}"></icon>
+      <!-- <icon class="iconfont icon-my_fill_light"></icon> -->
+      <text class="{{active==2?'active':''}}">我的</text>
+    </view>
+  </view>
+  </template>

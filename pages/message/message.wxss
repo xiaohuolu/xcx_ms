@@ -1,0 +1,16 @@
+/* pages/detail/evaluation/evaluation.wxss */
+.container{
+  background:#fff;
+  padding:30rpx;
+  font-size:30rpx;
+  margin-top:0;
+  padding-top:0;
+}
+.evaluation-person>text{
+  display: block;
+   transform: translate(80rpx,10rpx);
+   text-align: right;
+}
+.room-evaluation-content{
+  padding:30rpx 0;
+}

@@ -1,0 +1,10 @@
+/* .room-details-section{
+  margin-top:40rpx;
+}
+
+.room-details-section .room-details .details-item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:30rpx 0;
+} */

@@ -1,0 +1,30 @@
+  <import src="/template/navigator/navigator.wxml" />
+<view class="container">
+   <view class="authorization-section" wx:if="{{authorization}}">
+    <image src="../../assets/mine.jpg" style='width:300rpx;height:300rpx'></image>
+    <text class="font-gray">授权以体验更多功能</text>
+    <view class='warp' hidden='{{false}}'>
+      <button wx:if="{{true}}" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击授权</button>
+      <view wx:else>请升级微信版本</view>
+    </view>
+  </view>
+  <view wx:else> 
+    <view class="wx-person-section">
+      <view class="wx-person">
+        <open-data type="userAvatarUrl" class='headimg' lang="en" mode="cover"></open-data>
+        <open-data type="userNickName" class="userNickName ellipsis"></open-data>
+      </view>
+    </view>
+    <view class="my-items">
+      <view class="my-item border-b" bindtap="toMyOrders">
+        <text>我的订单 </text>
+        <text>></text>
+      </view>
+      <view class="my-item border-b" bindtap="toMyEvaluate">
+        <text>我的评价 </text>
+        <text>></text>
+      </view>
+    </view>
+   </view> 
+    <template is="tabNav" data="{{active}}" />
+</view>

@@ -1,0 +1,11 @@
+<!--pages/detail/facilities/facilities.wxml-->
+ <view class="whole-lease-section">
+      <view class="whole-lease">
+        <view wx:for="{{idsArr}}" wx:key="index">
+          <!-- <icon class="iconfont icon-cascades"></icon> -->
+          <image src="{{apiHost}}{{item.image}}"></image>
+          <text class="font28">{{item.name}}</text>
+        </view>
+       
+      </view>
+    </view>

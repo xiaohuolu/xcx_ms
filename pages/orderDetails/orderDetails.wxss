@@ -1,0 +1,100 @@
+/* pages/orderDetails/orderDetails.wxss */
+ .container{
+   color:#333;
+ }
+ .container .header-section{
+   display: flex;
+   align-items: center;
+   background:#fff;
+   justify-content: space-between;
+   padding:30rpx 20rpx;
+ }
+.list-section .list-item .item-describe .describe{
+  width:100%;
+}
+.cancel{
+  display: flex;
+  flex-direction: column;
+  background:#fff;
+  line-height: 1.5;
+  padding:10rpx 20rpx;
+}
+.list-section {
+  margin-top:20rpx;
+}
+.list-section .list-item .item-img{
+  width:28vw;
+}
+.list-section .list-item .item-describe{
+  width:62vw;
+}
+
+.list-section .list-item .item-describe .msg{
+  width:62vw;
+}
+.list-section .list-item .item-describe .title{
+    width:62vw;  
+}
+ .group-section{
+   background:#fff;
+  margin:20rpx 0;  
+ }
+ .group-section view{
+  line-height: 3;
+}
+ 
+.time-section{
+  background:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10rpx 20rpx;
+  line-height:2;
+  margin-top:20rpx;
+}
+.time-section .time{
+  display: flex;
+  flex-direction: column;
+}
+ 
+.group-section .total-price{
+   display: flex;
+   justify-content: space-between;
+}
+.group-section .price{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.web-price{
+  display: flex;
+  justify-content: space-between;
+  background:#fff;
+  margin-top:20rpx;
+  padding:20rpx 20rpx;
+}
+
+.unsubscribe{
+    display: flex;
+  justify-content: space-between;
+  background:#fff;
+  margin-top:20rpx;
+  padding:20rpx 20rpx;
+}
+.orders-msg-section{
+  margin-top:20rpx;
+  padding:0 20rpx 40rpx;
+  color:#777;
+  line-height: 2;
+  border-bottom: 1px solid #ddd;
+}
+.btn-group{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom:20rpx;
+}
+.btn-group button{
+  padding:10rpx 50rpx;
+  border-radius:0;
+}
